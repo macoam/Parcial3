@@ -1,0 +1,18 @@
+﻿<UserControl x:Class="ProyectoFinalEstructuraDeDatos.agregarElemento"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:ProyectoFinalEstructuraDeDatos"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid Background="White">
+        <RadioButton x:Name="rdbtnPelicula" Content="Pelicula" HorizontalAlignment="Left" Margin="61,42,0,0" VerticalAlignment="Top" Checked="RdbtnPelicula_Checked"/>
+        <RadioButton x:Name="rdbtnSerie" Content="Serie" HorizontalAlignment="Left" Margin="132,42,0,0" VerticalAlignment="Top" Checked="RdbtnSerie_Checked"/>
+        <Grid x:Name="grdContenido" HorizontalAlignment="Left" Height="358" Margin="10,62,0,0" VerticalAlignment="Top" Width="780">
+            <TextBlock HorizontalAlignment="Left" Margin="7,-23,0,0" TextWrapping="Wrap" Text="Tipo" VerticalAlignment="Top"/>
+        </Grid>
+        <TextBlock HorizontalAlignment="Left" Margin="17,10,0,0" TextWrapping="Wrap" Text="AGREGAR NUEVO ELEMENTO" VerticalAlignment="Top" FontWeight="Bold"/>
+
+    </Grid>
+</UserControl>

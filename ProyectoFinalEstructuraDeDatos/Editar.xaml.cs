@@ -23,6 +23,13 @@ namespace ProyectoFinalEstructuraDeDatos
         public Editar()
         {
             InitializeComponent();
+            txtAño.IsEnabled = false;
+            txtGenero.IsEnabled = false;
+            txtProductor.IsEnabled = false;
+            cbRanting.IsEnabled = false;
+            txtSinopsis.IsEnabled = false;
+            txtTemporadas.IsEnabled = false;
+            txtTitulo.IsEnabled = false;
         }
     }
 }

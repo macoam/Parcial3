@@ -9,10 +9,8 @@
     <Grid Background="White">
         <TextBox x:Name="txtTitulo" HorizontalAlignment="Left" Height="23" Margin="75,8,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120"/>
         <TextBox x:Name="txtAño" HorizontalAlignment="Left" Height="23" Margin="75,37,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120"/>
-        <ComboBox x:Name="cbTemporadas" HorizontalAlignment="Left" Margin="333,8,0,0" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="txtProductor" HorizontalAlignment="Left" Height="23" Margin="333,37,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtTemporadas" HorizontalAlignment="Left" Height="23" Margin="333,10,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120"/>
         <TextBox x:Name="txtDescripcion" HorizontalAlignment="Left" Height="51" Margin="75,132,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="378"/>
-        <ComboBox x:Name="cbRanting" HorizontalAlignment="Left" Margin="333,65,0,0" VerticalAlignment="Top" Width="120"/>
         <Button x:Name="btnCancelar" Content="Cancelar" HorizontalAlignment="Left" Margin="295,196,0,0" VerticalAlignment="Top" Width="75"/>
         <TextBlock HorizontalAlignment="Left" Margin="8,12,0,0" TextWrapping="Wrap" Text="Título" VerticalAlignment="Top"/>
         <TextBlock HorizontalAlignment="Left" Margin="8,41,0,0" TextWrapping="Wrap" Text="Año" VerticalAlignment="Top"/>
@@ -23,6 +21,8 @@
         <Button x:Name="btnGuardar" Content="Guardar" HorizontalAlignment="Left" Margin="158,196,0,0" VerticalAlignment="Top" Width="75"/>
         <TextBlock HorizontalAlignment="Left" Margin="8,132,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Text="Descrip"/><Run Text="c"/><Run Text="ión"/></TextBlock>
         <ComboBox x:Name="cbGenero" HorizontalAlignment="Left" Margin="75,65,0,0" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtRanting" HorizontalAlignment="Left" Height="23" Margin="333,66,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtProductor_Copy1" HorizontalAlignment="Left" Height="23" Margin="333,38,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120"/>
 
     </Grid>
 </UserControl>

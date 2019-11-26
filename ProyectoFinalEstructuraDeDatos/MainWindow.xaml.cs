@@ -101,22 +101,76 @@ namespace ProyectoFinalEstructuraDeDatos
         {
             grdContenido.Children.Clear();
             grdContenido.Children.Add(new Editar());
-            // (((Agregar)(gridprincipal.Children)).txtaño.Text);
-            //var hola= gridprincipal.Children.Add(new Agregar().txtaño.Text);
 
             btnEliminar.Visibility = Visibility.Visible;
-            //editar.Visibility = Visibility.Visible;
+
+            btnEliminar.Visibility = Visibility.Visible;
+            btnEditar.Visibility = Visibility.Visible;
             ((Editar)(grdContenido.Children[0])).txtTitulo.Text = element[listViewMain.SelectedIndex].Titulo;
             ((Editar)(grdContenido.Children[0])).txtSinopsis.Text = element[listViewMain.SelectedIndex].Sinopsis;
             ((Editar)(grdContenido.Children[0])).txtSinopsis.Text = element[listViewMain.SelectedIndex].Descripcion;
             ((Editar)(grdContenido.Children[0])).txtProductor.Text = element[listViewMain.SelectedIndex].Director;
             ((Editar)(grdContenido.Children[0])).txtProductor.Text = element[listViewMain.SelectedIndex].Productor;
-            ((Editar)(grdContenido.Children[0])).cbGenero.Text = element[listViewMain.SelectedIndex].Genero;
-            ((Editar)(grdContenido.Children[0])).cbTemporadas.Text = element[listViewMain.SelectedIndex].Temporadas;
+            ((Editar)(grdContenido.Children[0])).txtGenero.Text = element[listViewMain.SelectedIndex].Genero;
+            ((Editar)(grdContenido.Children[0])).txtTemporadas.Text = element[listViewMain.SelectedIndex].Temporadas;
             ((Editar)(grdContenido.Children[0])).cbRanting.Text = element[listViewMain.SelectedIndex].Ranting;
             ((Editar)(grdContenido.Children[0])).txtAño.Text = element[listViewMain.SelectedIndex].Año.ToString();
+            btnNumero1.Visibility = Visibility.Hidden;
+            btnNumero2.Visibility = Visibility.Hidden;
+            btnLetra1.Visibility = Visibility.Hidden;
+            btnLetra2.Visibility = Visibility.Hidden;
+
 
         }
 
+        private void BtnEliminar_Click(object sender, RoutedEventArgs e)
+        {
+            if (listViewMain.SelectedIndex != -1)
+            {
+                element.RemoveAt(listViewMain.SelectedIndex);
+            }
+        }
+
+        private void BtnEditar_Click(object sender, RoutedEventArgs e)
+        {
+            grdContenido.Children.Clear();
+            grdContenido.Children.Add(new Editar());
+
+            ((Editar)(grdContenido.Children[0])).txtTitulo.Text = element[listViewMain.SelectedIndex].Titulo;
+            ((Editar)(grdContenido.Children[0])).txtSinopsis.Text = element[listViewMain.SelectedIndex].Sinopsis;
+            ((Editar)(grdContenido.Children[0])).txtSinopsis.Text = element[listViewMain.SelectedIndex].Descripcion;
+            ((Editar)(grdContenido.Children[0])).txtProductor.Text = element[listViewMain.SelectedIndex].Director;
+            ((Editar)(grdContenido.Children[0])).txtProductor.Text = element[listViewMain.SelectedIndex].Productor;
+            ((Editar)(grdContenido.Children[0])).txtGenero.Text = element[listViewMain.SelectedIndex].Genero;
+            ((Editar)(grdContenido.Children[0])).txtTemporadas.Text = element[listViewMain.SelectedIndex].Temporadas;
+            ((Editar)(grdContenido.Children[0])).cbRanting.Text = element[listViewMain.SelectedIndex].Ranting;
+            ((Editar)(grdContenido.Children[0])).txtAño.Text = element[listViewMain.SelectedIndex].Año.ToString();
+
+            ((Editar)(grdContenido.Children[0])).txtTitulo.IsEnabled = true;
+            ((Editar)(grdContenido.Children[0])).txtSinopsis.IsEnabled = true;
+            ((Editar)(grdContenido.Children[0])).txtSinopsis.IsEnabled = true;
+            ((Editar)(grdContenido.Children[0])).txtProductor.IsEnabled = true;
+            ((Editar)(grdContenido.Children[0])).txtProductor.IsEnabled = true;
+            ((Editar)(grdContenido.Children[0])).cbRanting.IsEnabled = true;
+            ((Editar)(grdContenido.Children[0])).txtTemporadas.IsEnabled = true;
+            ((Editar)(grdContenido.Children[0])).cbRanting.IsEnabled = true;
+            ((Editar)(grdContenido.Children[0])).txtAño.IsEnabled = true;
+            btnActualizar.Visibility = Visibility.Visible;
+        }
+
+        private void BtnActualizar_Click(object sender, RoutedEventArgs e)
+        {
+            var usuario = ((Editar)(grdContenido.Children[0]));
+            var clase = element[listViewMain.SelectedIndex];
+
+            clase.Titulo = usuario.txtTitulo.Text;
+            clase.Sinopsis = usuario.txtSinopsis.Text;
+            clase.Temporadas = usuario.txtTemporadas.Text;
+            clase.Ranting = usuario.cbRanting.Text;
+            clase.Productor = usuario.txtProductor.Text;
+            clase.Descripcion = usuario.txtSinopsis.Text;
+
+            listViewMain.Items.Refresh();
+        }
     }
 }

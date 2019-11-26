@@ -12,7 +12,6 @@
         <TextBox x:Name="txtProductor" HorizontalAlignment="Left" Height="23" Margin="331,7,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120"/>
         <ComboBox x:Name="cbGenero" HorizontalAlignment="Left" Margin="73,63,0,0" VerticalAlignment="Top" Width="120"/>
         <TextBox x:Name="txtSinopsis" HorizontalAlignment="Left" Height="51" Margin="73,130,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="378"/>
-        <ComboBox x:Name="cbRanting" HorizontalAlignment="Left" Margin="331,36,0,0" VerticalAlignment="Top" Width="120"/>
         <Button x:Name="btnCancelar" Content="Cancelar" HorizontalAlignment="Left" Margin="293,194,0,0" VerticalAlignment="Top" Width="75"/>
         <TextBlock HorizontalAlignment="Left" Margin="6,10,0,0" TextWrapping="Wrap" Text="Título" VerticalAlignment="Top"/>
         <TextBlock HorizontalAlignment="Left" Margin="6,39,0,0" TextWrapping="Wrap" Text="Año" VerticalAlignment="Top"/>
@@ -21,7 +20,8 @@
         <TextBlock HorizontalAlignment="Left" Margin="249,39,0,0" TextWrapping="Wrap" Text="Ranting" VerticalAlignment="Top"/>
         <Button x:Name="btnGuardar" Content="Guardar" HorizontalAlignment="Left" Margin="156,194,0,0" VerticalAlignment="Top" Width="75"/>
         <TextBlock HorizontalAlignment="Left" Margin="6,130,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="Sinópsis"/>
-        <ComboBox x:Name="cbTemporadas" HorizontalAlignment="Left" Margin="331,65,0,0" VerticalAlignment="Top" Width="120"/>
         <TextBlock HorizontalAlignment="Left" Margin="249,69,0,0" TextWrapping="Wrap" Text="Temporadas" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtTemporadas" HorizontalAlignment="Left" Height="23" Margin="331,67,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtRanting" HorizontalAlignment="Left" Height="23" Margin="331,37,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120"/>
     </Grid>
 </UserControl>

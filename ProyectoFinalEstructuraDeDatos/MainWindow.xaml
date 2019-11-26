@@ -21,13 +21,16 @@
         <Button x:Name="btnNumero2" Content="10 - 1" HorizontalAlignment="Left" Margin="164,373,0,0" VerticalAlignment="Top" Width="75" Click="BtnNum2_Click"/>
         <Grid x:Name="grdContenido" HorizontalAlignment="Left" Height="298" Margin="293,55,0,0" VerticalAlignment="Top" Width="490">
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="13*"/>
-                <ColumnDefinition Width="57*"/>
+                <ColumnDefinition Width="48*"/>
+                <ColumnDefinition/>
             </Grid.ColumnDefinitions>
         </Grid>
         <TextBlock x:Name="tbOrdenar" HorizontalAlignment="Left" Margin="109,306,0,0" TextWrapping="Wrap" Text="Ordenar" VerticalAlignment="Top"/>
         <Button x:Name="btnAgregarNuevoElemento" Content="Agregar nuevo elemento" HorizontalAlignment="Left" Margin="305,29,0,0" VerticalAlignment="Top" Width="143" Click="BtnAgregarNuevoElemento_Click"/>
-        <Button x:Name="btnEliminar" Content="Eliminar" HorizontalAlignment="Left" Margin="305,373,0,0" VerticalAlignment="Top" Visibility="Hidden" Width="75"/>
+        <Button x:Name="btnEliminar" Visibility="Hidden" Content="Eliminar" HorizontalAlignment="Left" Margin="305,373,0,0" VerticalAlignment="Top" Width="75" Click="BtnEliminar_Click"/>
+        <Button x:Name="btnActualizar" Visibility="Hidden" Content="Actualizar" HorizontalAlignment="Left" Margin="504,373,0,0" VerticalAlignment="Top" Width="75" Click="BtnActualizar_Click"/>
+        <Button x:Name="btnEditar" Visibility="Hidden" Content="Editar" HorizontalAlignment="Left" Margin="405,373,0,0" VerticalAlignment="Top" Width="75" Click="BtnEditar_Click"/>
+
 
     </Grid>
 </Window>

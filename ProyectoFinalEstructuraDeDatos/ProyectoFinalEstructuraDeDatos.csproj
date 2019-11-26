@@ -58,6 +58,10 @@
     <Compile Include="agregarElemento.xaml.cs">
       <DependentUpon>agregarElemento.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Editar.xaml.cs">
+      <DependentUpon>Editar.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Elementos.cs" />
     <Compile Include="Serie.cs" />
     <Compile Include="usuarioPelicula.xaml.cs">
       <DependentUpon>usuarioPelicula.xaml</DependentUpon>
@@ -66,6 +70,10 @@
       <DependentUpon>usuarioSerie.xaml</DependentUpon>
     </Compile>
     <Page Include="agregarElemento.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Editar.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

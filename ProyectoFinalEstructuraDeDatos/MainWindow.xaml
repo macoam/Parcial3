@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <ListView x:Name="lstViewMain" HorizontalAlignment="Left" Height="258" Margin="10,29,0,0" VerticalAlignment="Top" Width="248" SelectionChanged="LstViewMain_SelectionChanged">
+        <ListView x:Name="listViewMain" HorizontalAlignment="Left" Height="258" Margin="10,29,0,0" VerticalAlignment="Top" Width="248" SelectionChanged="LstViewMain_SelectionChanged">
             <ListView.View>
                 <GridView>
                     <GridViewColumn DisplayMemberBinding="{Binding Titulo}" Header="Serie ó Pelicula" Width="120"/>
@@ -15,13 +15,19 @@
                 </GridView>
             </ListView.View>
         </ListView>
-        <Button x:Name="btnAgregar" Content="Agregar" HorizontalAlignment="Left" Margin="293,30,0,0" VerticalAlignment="Top" Width="75" Click="BtnAgregar_Click"/>
         <Button x:Name="btnLetra1" Content="A - Z" HorizontalAlignment="Left" Margin="22,333,0,0" VerticalAlignment="Top" Width="75"/>
         <Button x:Name="btnLetra2" Content="Z - A" HorizontalAlignment="Left" Margin="22,373,0,0" VerticalAlignment="Top" Width="75"/>
         <Button x:Name="btnNumero1" Content="1 - 10" HorizontalAlignment="Left" Margin="164,333,0,0" VerticalAlignment="Top" Width="75" Click="BtnNum1_Click"/>
         <Button x:Name="btnNumero2" Content="10 - 1" HorizontalAlignment="Left" Margin="164,373,0,0" VerticalAlignment="Top" Width="75" Click="BtnNum2_Click"/>
-        <Grid x:Name="grdContenido" HorizontalAlignment="Left" Height="298" Margin="293,55,0,0" VerticalAlignment="Top" Width="490"/>
+        <Grid x:Name="grdContenido" HorizontalAlignment="Left" Height="298" Margin="293,55,0,0" VerticalAlignment="Top" Width="490">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="13*"/>
+                <ColumnDefinition Width="57*"/>
+            </Grid.ColumnDefinitions>
+        </Grid>
         <TextBlock x:Name="tbOrdenar" HorizontalAlignment="Left" Margin="109,306,0,0" TextWrapping="Wrap" Text="Ordenar" VerticalAlignment="Top"/>
+        <Button x:Name="btnAgregarNuevoElemento" Content="Agregar nuevo elemento" HorizontalAlignment="Left" Margin="305,29,0,0" VerticalAlignment="Top" Width="143" Click="BtnAgregarNuevoElemento_Click"/>
+        <Button x:Name="btnEliminar" Content="Eliminar" HorizontalAlignment="Left" Margin="305,373,0,0" VerticalAlignment="Top" Visibility="Hidden" Width="75"/>
 
     </Grid>
 </Window>

@@ -24,5 +24,17 @@ namespace ProyectoFinalEstructuraDeDatos
         {
             InitializeComponent();
         }
+
+        private void RdbtnPelicula_Checked(object sender, RoutedEventArgs e)
+        {
+            grdContenidoDeSerieYPelicula.Children.Clear();
+            grdContenidoDeSerieYPelicula.Children.Add(new usuarioPelicula());
+        }
+
+        private void RdbtnSerie_Checked(object sender, RoutedEventArgs e)
+        {
+            grdContenidoDeSerieYPelicula.Children.Clear();
+            grdContenidoDeSerieYPelicula.Children.Add(new usuarioSerie());
+        }
     }
 }

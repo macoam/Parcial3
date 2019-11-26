@@ -9,7 +9,10 @@
     <Grid Background="White">
         <RadioButton x:Name="rdbtnPelicula" Content="Pelicula" HorizontalAlignment="Left" Margin="61,42,0,0" VerticalAlignment="Top" Checked="RdbtnPelicula_Checked"/>
         <RadioButton x:Name="rdbtnSerie" Content="Serie" HorizontalAlignment="Left" Margin="132,42,0,0" VerticalAlignment="Top" Checked="RdbtnSerie_Checked"/>
-        <Grid x:Name="grdContenido" HorizontalAlignment="Left" Height="358" Margin="10,62,0,0" VerticalAlignment="Top" Width="780">
+        <Grid x:Name="grdContenidoDeSerieYPelicula" HorizontalAlignment="Left" Height="358" Margin="10,62,0,0" VerticalAlignment="Top" Width="780">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
             <TextBlock HorizontalAlignment="Left" Margin="7,-23,0,0" TextWrapping="Wrap" Text="Tipo" VerticalAlignment="Top"/>
         </Grid>
         <TextBlock HorizontalAlignment="Left" Margin="17,10,0,0" TextWrapping="Wrap" Text="AGREGAR NUEVO ELEMENTO" VerticalAlignment="Top" FontWeight="Bold"/>
